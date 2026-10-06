@@ -17,7 +17,7 @@ function buscarPaisesPromesas(event) {
         .then(info => {
             resultado.innerHTML = `
             <p>${info.data.objects[0].capitals[0].name}</p>
-            <img src="${info.data.objects[0].flag.}
+            <img src="${info.data.objects[0].flag.url_svg}
         `
         })
         .catch(error => console.log("Error al consultar pais"));
